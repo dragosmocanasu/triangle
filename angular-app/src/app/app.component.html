@@ -1,0 +1,39 @@
+<h2>Triangle App</h2>
+<form [formGroup]="sidesForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="firstSide">First Side</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="firstSide"
+      id="firstSide"
+      size="2"
+    />
+  </div>
+  <br>
+  <div>
+    <label for="secondSide">Second Side</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="secondSide"
+      id="secondSide"
+      size="2"
+    />
+  </div>
+  <br>
+  <div>
+    <label for="thirdSide">Third Side</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="thirdSide"
+      id="thirdSide"
+      size="2"
+    />
+  </div>
+  <br>
+  <button type="submit" class="btn btn-danger">Compute</button>
+</form>
+<br>
+<div>Result: {{ result }}</div>
